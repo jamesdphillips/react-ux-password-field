@@ -209,17 +209,13 @@ var InputPassword = React.createClass({
     }
 
     // set debouncer for password
-    if (this.props.toggleMask) {
-      this.maskPassword = debounce(this.addPasswordType, this.props.unMaskTime);
-    }
+    this.maskPassword = debounce(this.addPasswordType, this.props.unMaskTime);
   },
 
   componentWillUnmount() {
     // cancel the debouncer when component is not used anymore. This to avoid
     // setting the state  unnecessarily, see issue #24
-    if (this.maskPassword) {
-      this.maskPassword.cancel()
-    }
+    this.maskPassword.cancel();
   },
 
   render() {
