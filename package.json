@@ -37,17 +37,19 @@
     "iojs": ">=2.x.x",
     "nodejs": ">=0.11.x"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "autoprefixer-core": "^6.0.1",
-    "babel": "^5.8.23",
     "babel-core": "^5.8.25",
     "babel-jest": "^5.3.0",
     "babel-loader": "^5.3.2",
+    "babel": "^5.8.23",
     "css-loader": "^0.20.1",
     "csswring": "^4.0.0",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "gh-pages-deploy": "^0.3.0",
+    "jest-cli": "0.5.10",
     "jsx-loader": "^0.13.2",
     "lodash.debounce": "^3.1.1",
     "node-sass": "^3.4.2",
@@ -59,11 +61,11 @@
     "script-loader": "^0.6.1",
     "style-loader": "^0.12.4",
     "url-loader": "^0.5.6",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1"
+    "webpack-dev-server": "^1.12.1",
+    "webpack": "^1.12.2"
   },
-  "devDependencies": {
-    "jest-cli": "0.5.10"
+  "peerDependencies": {
+    "react-dom": "0.x.x"
   },
   "gh-pages-deploy": {
     "staticpath": "demo",
