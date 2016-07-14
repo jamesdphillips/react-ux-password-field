@@ -65,7 +65,7 @@
     "webpack": "^1.12.2"
   },
   "peerDependencies": {
-    "react-dom": "0.x.x"
+    "react-dom": "^0.14.0 || ^15.0.0-0"
   },
   "gh-pages-deploy": {
     "staticpath": "demo",
